@@ -10,7 +10,7 @@
 
 BLOCKBOUND(이하 "앱")는 무료로 다운로드할 수 있는 Android 모바일 게임입니다. 본 프라이버시 정책은 앱을 사용할 때 어떤 정보를 수집하고, 어떻게 사용하며, 어떻게 보호하는지를 설명합니다
 
-개발자: ejekeooe@gmail.com
+개발자: assembledbyj@gmail.com
 
 ### 2. 수집하는 정보
 
@@ -103,7 +103,7 @@ EEA 또는 영국에서 앱을 사용하는 경우, 법률상 필요한 Google U
 
 BLOCKBOUND는 13세 이상을 대상으로 합니다. 본 앱은 13세 미만 어린이를 대상으로 광고하거나, 알려진 방식으로 13세 미만 어린이에게서 정보를 수집하지 않습니다.
 
-부모 또는 보호자가 13세 미만 어린이가 이 앱을 사용하고 있음을 발견하면, ejekeooe@gmail.com으로 연락해 주세요.
+부모 또는 보호자가 13세 미만 어린이가 이 앱을 사용하고 있음을 발견하면, assembledbyj@gmail.com으로 연락해 주세요.
 
 ### 7. 데이터 보존 및 보안
 
@@ -132,7 +132,7 @@ EEA 거주자인 경우, 다음 권리가 있습니다:
 - 정보 판매 **거절** (본 앱은 판매하지 않음)
 
 #### 8.3 권리 행사
-이러한 권리를 행사하려면 ejekeooe@gmail.com으로 요청하세요. 대부분의 데이터(광고, 측정)는 Google에서 보유하므로, Google의 개인 정보 보호 도구를 통해서도 접근할 수 있습니다.
+이러한 권리를 행사하려면 assembledbyj@gmail.com으로 요청하세요. 대부분의 데이터(광고, 측정)는 Google에서 보유하므로, Google의 개인 정보 보호 도구를 통해서도 접근할 수 있습니다.
 
 ### 9. 정책 변경
 
@@ -149,7 +149,7 @@ EEA 거주자인 경우, 다음 권리가 있습니다:
 
 본 프라이버시 정책에 대한 질문이나 우려 사항이 있으면:
 
-**Email:** ejekeooe@gmail.com
+**Email:** assembledbyj@gmail.com
 
 회신 시간: 보통 7일 이내
 
@@ -163,7 +163,7 @@ EEA 거주자인 경우, 다음 권리가 있습니다:
 
 BLOCKBOUND (hereinafter "App") is a free-to-download Android mobile game. This Privacy Policy explains what information we collect when you use the App, how we use it, and how we protect it.
 
-Developer: ejekeooe@gmail.com
+Developer: assembledbyj@gmail.com
 
 ### 2. Information We Collect
 
@@ -257,7 +257,7 @@ privacy options are required for the current region/status, the same Settings sc
 
 BLOCKBOUND is intended for users 13 years of age and older. The App does not knowingly collect information from children under 13 and is not directed to children under 13.
 
-If you are a parent or guardian and believe your child under 13 is using this App, please contact us at ejekeooe@gmail.com.
+If you are a parent or guardian and believe your child under 13 is using this App, please contact us at assembledbyj@gmail.com.
 
 ### 7. Data Retention & Security
 
@@ -286,7 +286,7 @@ If you reside in California, you have the right to:
 - Opt out of "sale" of personal information (this App does not sell data)
 
 #### 8.3 Exercising Your Rights
-To exercise any of these rights, email ejekeooe@gmail.com with your request. Please note that most data (ads, measurements) is held by Google and can also be accessed through Google's privacy control tools.
+To exercise any of these rights, email assembledbyj@gmail.com with your request. Please note that most data (ads, measurements) is held by Google and can also be accessed through Google's privacy control tools.
 
 ### 9. Changes to This Policy
 
@@ -303,6 +303,6 @@ Revision History:
 
 If you have questions or concerns about this Privacy Policy:
 
-**Email:** ejekeooe@gmail.com
+**Email:** assembledbyj@gmail.com
 
 **Response Time:** We aim to respond within 7 days.
