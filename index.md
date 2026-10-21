@@ -34,7 +34,9 @@ BLOCKBOUND(이하 "앱", 패키지 `com.blockbound.game`)는 무료로 내려받
 - IP 주소에서 추정한 대략적인 위치(국가·도시 수준)
 - 광고 노출·클릭·완료 같은 광고 상호작용, 진단·성능 정보
 
-법적으로 필요한 지역(유럽 경제 지역·영국·스위스, 미국 일부 주 등)에서는 Google UMP 개인정보 메시지가 표시될 수 있으며, 그 선택이 광고 요청을 허용하기 전에는 광고를 요청하지 않습니다. 해당 지역에서는 설정의 **광고 개인정보 선택**에서 다시 고를 수 있습니다. Google의 처리는 [Google 개인정보처리방침](https://policies.google.com/privacy)과 [Google 파트너 사이트·앱의 데이터 사용](https://policies.google.com/technologies/partner-sites)을 따릅니다.
+버전 25부터 앱은 나이를 묻거나 저장하지 않고 모든 사용자의 광고 요청에 Google의 동의 연령 미만 처리 설정을 적용합니다. 개인화 광고와 리마케팅을 요청하지 않습니다.
+
+Google UMP는 지역과 이 처리 설정에 따라 개인정보 메시지나 선택 화면이 필요한지 판단합니다. 선택이 필요한 경우 그 선택으로 광고 요청이 허용되기 전에는 광고를 요청하지 않습니다. Google이 재선택 화면을 요구하는 경우 설정의 **광고 개인정보 선택**에서 다시 고를 수 있습니다. Google의 처리는 [Google 개인정보처리방침](https://policies.google.com/privacy)과 [Google 파트너 사이트·앱의 데이터 사용](https://policies.google.com/technologies/partner-sites)을 따릅니다.
 
 #### 3.2 이용 분석 — 사용하지 않음
 
@@ -83,7 +85,7 @@ Google 연락처: [Google 개인정보 문의](https://support.google.com/polici
 ### 6. 선택할 수 있는 것
 
 - **광고 ID**: Android 설정의 개인정보 보호 › 광고(기기·버전마다 경로가 다름)에서 광고 ID를 재설정하거나 삭제할 수 있습니다.
-- **광고 개인정보 선택**: 해당 지역에서는 UMP 메시지와 설정의 **광고 개인정보 선택**에서 바꿀 수 있습니다.
+- **광고 개인정보 선택**: Google이 선택 화면을 요구하는 경우 UMP 메시지와 설정의 **광고 개인정보 선택**에서 바꿀 수 있습니다.
 - **매일 알림**: 설정의 **알림과 개인정보** 묶음 또는 Android 알림 설정에서 끌 수 있습니다.
 
 ### 7. 아동
@@ -114,7 +116,7 @@ BLOCKBOUND는 13세 이상을 대상으로 합니다. 13세 미만 아동을 대
 - **2026-10-09**: 현재 버전에 맞춤 — 인앱 구매 없음(광고 제거 구매 문단 삭제), 선택형 매일 알림·결과 공유·평가 요청 추가, Daily 기록을 기기의 "오늘의 최고" 기록으로 정정, 근거 없는 고정 보존 기간 삭제, 처리 위탁·국외 이전 표 추가, "계속 사용하면 동의" 문구 삭제
 - **2026-10-13**: 설치 경과일·세션 번호와 요청별 광고 측정, 동의 전 소급 전송 없음·철회 시 대기 이벤트 폐기, 현재 알림 설정 위치를 명시
 - **2026-10-15**: vc18 코드·SDK 대조 — App Set ID, Remote Config·App Check 처리 정보, Android 13+ 알림 권한 조건, 공유 시 클립보드 복사, 외부 서비스 데이터 삭제 요청 범위를 명확히 설명
-- **2026-10-21**: 버전 24부터 이용 분석(Firebase Analytics)을 모든 사용자에게 끄고 동의 화면과 설정 스위치를 없앰. 기기 설정 목록에 색 구분 기호 추가
+- **2026-10-21**: 버전 24부터 이용 분석(Firebase Analytics)을 모든 사용자에게 끄고 동의 화면과 설정 스위치를 없앰. 기기 설정 목록에 색 구분 기호 추가. 버전 25부터는 나이를 수집하지 않고 모든 광고 요청에 동의 연령 미만 처리를 적용해 개인화 광고·리마케팅 요청을 제한
 
 ### 11. 문의
 
@@ -154,7 +156,9 @@ The App is supported by ads: rewarded ads you choose to watch (rerolls, revives,
 - Approximate location inferred from your IP address (country/city level)
 - Ad interactions such as impressions, clicks and completions, plus diagnostic and performance data
 
-Where required by law (for example the EEA, the UK, Switzerland and certain US states), a Google UMP privacy message may be shown, and the App does not request ads until those choices allow it. In those regions you can reopen the choices from **Ad privacy choices** in Settings. Google's processing follows the [Google Privacy Policy](https://policies.google.com/privacy) and [How Google uses information from sites or apps that use its services](https://policies.google.com/technologies/partner-sites).
+From version 25, the App does not ask for or store your age and applies Google's under-age-of-consent treatment to ad requests for everyone. It does not request personalized advertising or remarketing.
+
+Google UMP determines whether a privacy message or choice screen is needed based on the region and this treatment setting. When choices are required, the App does not request ads until those choices allow it. When Google requires a way to reopen choices, **Ad privacy choices** is available in Settings. Google's processing follows the [Google Privacy Policy](https://policies.google.com/privacy) and [How Google uses information from sites or apps that use its services](https://policies.google.com/technologies/partner-sites).
 
 #### 3.2 Analytics — not used
 
@@ -203,7 +207,7 @@ Google privacy contact: [Google privacy form](https://support.google.com/policie
 ### 6. Your Choices
 
 - **Advertising ID**: reset or delete it in Android Settings under Privacy › Ads (the path varies by device and version).
-- **Ad privacy choices**: where applicable, through the UMP message and **Ad privacy choices** in Settings.
+- **Ad privacy choices**: when Google requires a choice screen, through the UMP message and **Ad privacy choices** in Settings.
 - **Daily reminder**: turn it off under **Notifications & privacy** in Settings or in Android's notification settings.
 
 ### 7. Children
@@ -234,7 +238,7 @@ Revision history:
 - **2026-10-09**: Matched the current version — no in-app purchases (remove-ads section removed); added the optional daily reminder, result sharing and the rating prompt; corrected Daily records to the on-device "Today's best"; removed an unsupported fixed retention period; added the service-provider and international-transfer table; removed "continued use means acceptance"
 - **2026-10-13**: Clarified install age, session number and per-request ad measurement, no pre-consent replay, discarded queued events on withdrawal, and the current reminder setting location
 - **2026-10-15**: Checked against vc18 code and SDK disclosures; clarified App Set ID, Remote Config/App Check information, Android 13+ notification permission, clipboard copying when sharing, and the scope of deletion requests for outside-service data
-- **2026-10-21**: From version 24, analytics (Firebase Analytics) is off for everyone and the consent prompt and Settings switch are removed; added color symbols to the on-device settings list
+- **2026-10-21**: From version 24, analytics (Firebase Analytics) is off for everyone and the consent prompt and Settings switch are removed; added color symbols to the on-device settings list. From version 25, all ad requests use under-age-of-consent treatment without collecting age, restricting personalized advertising and remarketing requests
 
 ### 11. Contact
 
