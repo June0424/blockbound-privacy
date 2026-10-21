@@ -13,7 +13,7 @@ BLOCKBOUND(이하 "앱", 패키지 `com.blockbound.game`)는 무료로 내려받
 - 개발자·개인정보 보호 책임자: BLOCKBOUND 개발자
 - 연락처: assembledbyj@gmail.com
 
-앱에는 회원가입·로그인·온라인 순위·채팅·클라우드 저장이 없습니다. 현재 버전에는 판매하는 인앱 상품이 없습니다.
+앱에는 회원가입·로그인·온라인 순위·채팅·클라우드 저장이 없습니다. 버전 26부터 선택형 인앱 상품 '강제 광고 제거' 하나를 판매합니다(3.7).
 
 ### 2. 기기에만 저장되는 정보
 
@@ -21,6 +21,7 @@ BLOCKBOUND(이하 "앱", 패키지 `com.blockbound.game`)는 무료로 내려받
 
 - **게임 진행**: 코인, 해금한 카드, 구입·장착한 외형(테마·스킨·사운드·진동), 최고 점수, Run·Classic 기록과 "오늘의 최고" 기록(최근 30일), 미션 진행, 이어서 할 Run
 - **설정**: 언어, 소리·음악·진동, 큰 글자·고대비·색 구분 기호, 시작 화면, 매일 알림 사용 여부
+- **구매 상태**: 강제 광고 제거를 구매했는지 여부(Google Play가 확인한 결과)
 
 앱을 삭제하거나 앱 데이터를 지우면 이 정보는 사라지며 복구할 수 없습니다(앱 백업 기능을 쓰지 않습니다).
 
@@ -64,11 +65,16 @@ Firebase의 처리 내용은 [Firebase 개인정보 및 보안](https://firebase
 
 일정 기간 이상 플레이한 뒤 Google Play의 인앱 평가 창이 표시될 수 있습니다. 평가와 리뷰는 Google Play가 처리하며 앱은 그 내용을 받지 않습니다.
 
+#### 3.7 강제 광고 제거 구매 (선택)
+
+설정에서 **강제 광고 제거**를 한 번 구매하면 게임을 마친 뒤 나오는 전면 광고가 더 이상 나오지 않습니다. 직접 골라서 보는 보상형 광고는 계속 이용할 수 있습니다. 결제는 Google Play 결제 시스템이 처리하며, 개발자는 카드 번호 같은 결제 정보를 받지 않습니다. 앱은 Google Play가 기기에 전달한 구매 정보(상품 ID·구매 확인 정보)로 구매 여부를 기기 안에서 확인하고, 그 결과만 기기에 저장합니다. 이 구매 정보를 개발자 서버나 다른 회사로 보내지 않습니다. 기기를 바꾸거나 앱을 다시 설치하면 설정의 **구매 복원**으로 되찾을 수 있습니다. 결제·환불은 Google Play 정책을 따릅니다.
+
 ### 4. 이용 목적
 
 - 광고 제공·측정과 부정 사용 방지
 - 앱 안정성 개선(충돌·오류 파악)과 운영 설정 적용
 - 사용자가 켠 매일 알림 표시
+- 사용자가 고른 광고 제거 구매의 처리·복원
 
 ### 5. 처리 위탁·국외 이전
 
@@ -78,7 +84,7 @@ Firebase의 처리 내용은 [Firebase 개인정보 및 보안](https://firebase
 |---|---|---|---|---|---|
 | Google LLC (AdMob·UMP) | 미국 등 Google 데이터 센터 | 3.1의 광고·앱 집합 식별자, 기기 정보·대략적 위치·광고 상호작용·진단 정보 | 광고 제공·측정·부정 방지 | 앱 사용 중 암호화된 네트워크 전송 | Google 정책에 따름 |
 | Google LLC (Firebase) | 미국 등 Google 데이터 센터 | 3.3의 설치 식별자, 기기·지역/설정 정보, 충돌 정보, 무결성 토큰·증명 정보 | 안정성·운영·보안 | 앱 사용 중 암호화된 네트워크 전송 | Firebase 정책과 프로젝트 설정에 따름 |
-| Google LLC (Google Play) | 미국 등 | 평가 요청·무결성 확인에 필요한 정보 | 평가, 무결성 확인 | 앱 사용 중 | Google 정책에 따름 |
+| Google LLC (Google Play) | 미국 등 | 평가 요청·무결성 확인·구매 처리에 필요한 정보 | 평가, 무결성 확인, 광고 제거 결제·복원 | 앱 사용 중 | Google 정책에 따름 |
 
 Google 연락처: [Google 개인정보 문의](https://support.google.com/policies/contact/general_privacy_form). 광고 관련 처리는 아래 6의 방법으로 제한할 수 있습니다. 광고 처리를 모두 거부하면 광고 기반인 이 앱의 일부 보상(광고를 보고 받는 혜택)을 이용하지 못할 수 있습니다. 법률에 따라 요구되는 경우 정보를 제공할 수 있습니다.
 
@@ -116,7 +122,7 @@ BLOCKBOUND는 13세 이상을 대상으로 합니다. 13세 미만 아동을 대
 - **2026-10-09**: 현재 버전에 맞춤 — 인앱 구매 없음(광고 제거 구매 문단 삭제), 선택형 매일 알림·결과 공유·평가 요청 추가, Daily 기록을 기기의 "오늘의 최고" 기록으로 정정, 근거 없는 고정 보존 기간 삭제, 처리 위탁·국외 이전 표 추가, "계속 사용하면 동의" 문구 삭제
 - **2026-10-13**: 설치 경과일·세션 번호와 요청별 광고 측정, 동의 전 소급 전송 없음·철회 시 대기 이벤트 폐기, 현재 알림 설정 위치를 명시
 - **2026-10-15**: vc18 코드·SDK 대조 — App Set ID, Remote Config·App Check 처리 정보, Android 13+ 알림 권한 조건, 공유 시 클립보드 복사, 외부 서비스 데이터 삭제 요청 범위를 명확히 설명
-- **2026-10-21**: 버전 24부터 이용 분석(Firebase Analytics)을 모든 사용자에게 끄고 동의 화면과 설정 스위치를 없앰. 기기 설정 목록에 색 구분 기호 추가. 버전 25부터는 나이를 수집하지 않고 모든 광고 요청에 동의 연령 미만 처리를 적용해 개인화 광고·리마케팅 요청을 제한
+- **2026-10-21**: 버전 24부터 이용 분석(Firebase Analytics)을 모든 사용자에게 끄고 동의 화면과 설정 스위치를 없앰. 기기 설정 목록에 색 구분 기호 추가. 버전 25부터는 나이를 수집하지 않고 모든 광고 요청에 동의 연령 미만 처리를 적용해 개인화 광고·리마케팅 요청을 제한. 버전 26부터 선택형 강제 광고 제거 구매(Google Play 결제)와 기기 저장 구매 상태를 추가
 
 ### 11. 문의
 
@@ -135,7 +141,7 @@ BLOCKBOUND (the "App", package `com.blockbound.game`) is a free Android game. Th
 - Developer and privacy contact: the BLOCKBOUND developer
 - Contact: assembledbyj@gmail.com
 
-The App has no sign-up, login, online ranking, chat, or cloud save. The current version sells no in-app products.
+The App has no sign-up, login, online ranking, chat, or cloud save. From version 26 it sells one optional in-app product, "Remove forced ads" (3.7).
 
 ### 2. Information Stored Only on Your Device
 
@@ -143,6 +149,7 @@ The following stays in the App's private storage on your device and is not sent 
 
 - **Game progress**: coins, unlocked cards, purchased/equipped cosmetics (themes, skins, sound and haptic packs), best scores, Run and Classic records and "Today's best" records (last 30 days), mission progress, and a Run in progress
 - **Settings**: language, sound/music/vibration, large text, high contrast and color symbols, start screen, and whether the daily reminder is on
+- **Purchase status**: whether you bought "Remove forced ads" (as confirmed by Google Play)
 
 Uninstalling the App or clearing its data erases this information; it cannot be restored (the App does not use Android backup).
 
@@ -186,11 +193,16 @@ When you tap Share on a results screen, a result line (such as score and Stage) 
 
 After some play, Google Play's in-app review prompt may appear. Ratings and reviews are handled by Google Play; the App does not receive their content.
 
+#### 3.7 Remove Forced Ads Purchase (optional)
+
+A one-time purchase of **Remove forced ads** in Settings stops the full-screen ads shown after a finished game. Rewarded ads you choose to watch stay available. Payment is handled by Google Play's billing system; the developer never receives card numbers or other payment details. The App checks on your device the purchase information Google Play passes to it (product ID and purchase confirmation) and stores only the result on the device. It does not send this purchase information to developer servers or other companies. After changing devices or reinstalling, use **Restore purchases** in Settings. Payments and refunds follow Google Play's policies.
+
 ### 4. How Information Is Used
 
 - To serve and measure ads and prevent fraud
 - To improve stability (crashes and errors) and apply operational settings
 - To show the daily reminder you turned on
+- To process and restore the remove-ads purchase you chose
 
 ### 5. Service Providers and International Transfers
 
@@ -200,7 +212,7 @@ The developer does not sell information. To provide the features above, informat
 |---|---|---|---|---|---|
 | Google LLC (AdMob, UMP) | United States and other Google data centers | Advertising and App Set identifiers, device information, approximate location, ad interactions, diagnostics (3.1) | Ads, measurement, fraud prevention | Encrypted network transfer while you use the App | Per Google's policies |
 | Google LLC (Firebase) | United States and other Google data centers | Installation identifiers, device/region/settings information, crash information, integrity tokens and attestation information (3.3) | Stability, operations, security | Encrypted network transfer while you use the App | Per Firebase policies and project settings |
-| Google LLC (Google Play) | United States and others | Information needed for the review prompt and integrity checks | Ratings, integrity checks | While you use the App | Per Google's policies |
+| Google LLC (Google Play) | United States and others | Information needed for the review prompt, integrity checks and purchases | Ratings, integrity checks, remove-ads payment and restore | While you use the App | Per Google's policies |
 
 Google privacy contact: [Google privacy form](https://support.google.com/policies/contact/general_privacy_form). You can limit ad processing with the choices in section 6. If you refuse all ad processing, some ad-based benefits in the App may not be available. Information may be disclosed when required by law.
 
@@ -238,7 +250,7 @@ Revision history:
 - **2026-10-09**: Matched the current version — no in-app purchases (remove-ads section removed); added the optional daily reminder, result sharing and the rating prompt; corrected Daily records to the on-device "Today's best"; removed an unsupported fixed retention period; added the service-provider and international-transfer table; removed "continued use means acceptance"
 - **2026-10-13**: Clarified install age, session number and per-request ad measurement, no pre-consent replay, discarded queued events on withdrawal, and the current reminder setting location
 - **2026-10-15**: Checked against vc18 code and SDK disclosures; clarified App Set ID, Remote Config/App Check information, Android 13+ notification permission, clipboard copying when sharing, and the scope of deletion requests for outside-service data
-- **2026-10-21**: From version 24, analytics (Firebase Analytics) is off for everyone and the consent prompt and Settings switch are removed; added color symbols to the on-device settings list. From version 25, all ad requests use under-age-of-consent treatment without collecting age, restricting personalized advertising and remarketing requests
+- **2026-10-21**: From version 24, analytics (Firebase Analytics) is off for everyone and the consent prompt and Settings switch are removed; added color symbols to the on-device settings list. From version 25, all ad requests use under-age-of-consent treatment without collecting age, restricting personalized advertising and remarketing requests. From version 26, added the optional "Remove forced ads" purchase (Google Play billing) and its on-device purchase status
 
 ### 11. Contact
 
