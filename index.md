@@ -4,7 +4,7 @@
 
 ## 개인정보처리방침 (한국어)
 
-**발효일: 2026-10-15**
+**발효일: 2026-10-21**
 
 ### 1. 소개
 
@@ -20,9 +20,9 @@ BLOCKBOUND(이하 "앱", 패키지 `com.blockbound.game`)는 무료로 내려받
 다음 정보는 기기의 앱 전용 저장 공간에만 저장되며 개발자 서버로 보내지 않습니다.
 
 - **게임 진행**: 코인, 해금한 카드, 구입·장착한 외형(테마·스킨·사운드·진동), 최고 점수, Run·Classic 기록과 "오늘의 최고" 기록(최근 30일), 미션 진행, 이어서 할 Run
-- **설정**: 언어, 소리·음악·진동, 큰 글자·고대비, 시작 화면, 이용 분석 허용 여부, 매일 알림 사용 여부
+- **설정**: 언어, 소리·음악·진동, 큰 글자·고대비·색 구분 기호, 시작 화면, 매일 알림 사용 여부
 
-앱을 삭제하거나 앱 데이터를 지우면 이 정보는 사라지며 복구할 수 없습니다(앱 백업 기능을 쓰지 않습니다). 단, 아래 3.2의 이용 분석을 허용하면 게임 사용 이벤트가 별도로 전송될 수 있습니다.
+앱을 삭제하거나 앱 데이터를 지우면 이 정보는 사라지며 복구할 수 없습니다(앱 백업 기능을 쓰지 않습니다).
 
 ### 3. 외부 서비스가 처리하는 정보
 
@@ -36,19 +36,13 @@ BLOCKBOUND(이하 "앱", 패키지 `com.blockbound.game`)는 무료로 내려받
 
 법적으로 필요한 지역(유럽 경제 지역·영국·스위스, 미국 일부 주 등)에서는 Google UMP 개인정보 메시지가 표시될 수 있으며, 그 선택이 광고 요청을 허용하기 전에는 광고를 요청하지 않습니다. 해당 지역에서는 설정의 **광고 개인정보 선택**에서 다시 고를 수 있습니다. Google의 처리는 [Google 개인정보처리방침](https://policies.google.com/privacy)과 [Google 파트너 사이트·앱의 데이터 사용](https://policies.google.com/technologies/partner-sites)을 따릅니다.
 
-#### 3.2 이용 분석 — Google Firebase Analytics (선택, 처음에는 꺼짐)
+#### 3.2 이용 분석 — 사용하지 않음
 
-이용 분석은 **처음 설치했을 때 꺼져 있으며**, 최초 동의 화면에서 허용하거나 설정의 **익명 이용 분석**을 켠 경우에만 수집됩니다. 켜면 다음 정보가 게임 개선(난이도·기능 조정, 오류 파악)을 위해 처리될 수 있습니다.
-
-- 앱 인스턴스 식별자(무작위 값, 이름·이메일이 아님), 기기·OS·앱 버전, 대략적인 국가
-- 게임 사용 이벤트: 모드 선택, Stage 진행, 카드 선택·발동, 튜토리얼 진행, 최종 결과 화면, 광고 선택지 노출·요청·지급·수익, 설정 변경, 공유 사용 등
-- 기기에서 기록한 설치 후 경과일과 세션 번호, 무작위 세션·Run·광고 요청 ID(이름·이메일·광고 ID를 포함하지 않음)
-
-앱은 Firebase에 광고용 저장·광고 사용자 데이터·광고 개인화 동의를 항상 "거부"로 전달합니다. 동의 전 활동을 나중에 소급 전송하지 않습니다. 설정에서 끄면 그 뒤로는 수집하지 않고 아직 전송하지 않은 앱 내 대기 이벤트도 버립니다.
+버전 24부터 앱은 Google Firebase Analytics로 게임 사용 정보를 수집하지 않습니다. 모든 사용자에게 꺼져 있으며 켜는 화면이나 설정이 없습니다. 이전 버전에서 이용 분석을 허용했더라도 그 선택은 무시되고 기기에서 지워집니다. 이전 버전에서 허용했을 때 이미 전송된 정보는 9의 방법으로 삭제를 요청할 수 있습니다.
 
 #### 3.3 오류 보고·운영 설정·보안 — Firebase Crashlytics, Remote Config, App Check
 
-이 서비스는 이용 분석 스위치와 별개로 동작합니다.
+이 서비스는 이용 분석과 별개로 동작합니다.
 
 - **Crashlytics**: 앱이 비정상 종료되거나 오류가 날 때 충돌 정보(오류 위치, 기기·OS·앱 버전, 앱 상태)와 설치 식별자를 처리해 안정성을 개선합니다. 관련 Firebase SDK는 앱 실행·전환 시각 같은 실행 세션 정보와 앱·기기 정보도 진단용으로 처리할 수 있습니다.
 - **Remote Config**: 기능 켜기·끄기 같은 운영 설정 값을 받아 옵니다. 이 과정에서 설치 식별자와 국가·언어·시간대·OS·SDK·앱 버전 같은 정보를 처리할 수 있습니다.
@@ -72,7 +66,6 @@ Firebase의 처리 내용은 [Firebase 개인정보 및 보안](https://firebase
 
 - 광고 제공·측정과 부정 사용 방지
 - 앱 안정성 개선(충돌·오류 파악)과 운영 설정 적용
-- (이용 분석을 켠 경우) 게임 난이도·기능 개선
 - 사용자가 켠 매일 알림 표시
 
 ### 5. 처리 위탁·국외 이전
@@ -82,16 +75,15 @@ Firebase의 처리 내용은 [Firebase 개인정보 및 보안](https://firebase
 | 받는 자 | 국가 | 항목 | 목적 | 시기·방법 | 보유 기간 |
 |---|---|---|---|---|---|
 | Google LLC (AdMob·UMP) | 미국 등 Google 데이터 센터 | 3.1의 광고·앱 집합 식별자, 기기 정보·대략적 위치·광고 상호작용·진단 정보 | 광고 제공·측정·부정 방지 | 앱 사용 중 암호화된 네트워크 전송 | Google 정책에 따름 |
-| Google LLC (Firebase) | 미국 등 Google 데이터 센터 | 3.2(허용 시)·3.3의 앱 인스턴스·설치 식별자, 기기·지역/설정 정보, 사용 이벤트, 충돌 정보, 무결성 토큰·증명 정보 | 이용 분석·안정성·운영·보안 | 앱 사용 중 암호화된 네트워크 전송 | Firebase 정책과 프로젝트 설정에 따름 |
+| Google LLC (Firebase) | 미국 등 Google 데이터 센터 | 3.3의 설치 식별자, 기기·지역/설정 정보, 충돌 정보, 무결성 토큰·증명 정보 | 안정성·운영·보안 | 앱 사용 중 암호화된 네트워크 전송 | Firebase 정책과 프로젝트 설정에 따름 |
 | Google LLC (Google Play) | 미국 등 | 평가 요청·무결성 확인에 필요한 정보 | 평가, 무결성 확인 | 앱 사용 중 | Google 정책에 따름 |
 
-Google 연락처: [Google 개인정보 문의](https://support.google.com/policies/contact/general_privacy_form). 이용 분석은 설정에서 끌 수 있고, 광고 관련 처리는 아래 6의 방법으로 제한할 수 있습니다. 광고 처리를 모두 거부하면 광고 기반인 이 앱의 일부 보상(광고를 보고 받는 혜택)을 이용하지 못할 수 있습니다. 법률에 따라 요구되는 경우 정보를 제공할 수 있습니다.
+Google 연락처: [Google 개인정보 문의](https://support.google.com/policies/contact/general_privacy_form). 광고 관련 처리는 아래 6의 방법으로 제한할 수 있습니다. 광고 처리를 모두 거부하면 광고 기반인 이 앱의 일부 보상(광고를 보고 받는 혜택)을 이용하지 못할 수 있습니다. 법률에 따라 요구되는 경우 정보를 제공할 수 있습니다.
 
 ### 6. 선택할 수 있는 것
 
 - **광고 ID**: Android 설정의 개인정보 보호 › 광고(기기·버전마다 경로가 다름)에서 광고 ID를 재설정하거나 삭제할 수 있습니다.
 - **광고 개인정보 선택**: 해당 지역에서는 UMP 메시지와 설정의 **광고 개인정보 선택**에서 바꿀 수 있습니다.
-- **이용 분석**: 설정의 **익명 이용 분석**에서 켜고 끌 수 있습니다(처음에는 꺼짐).
 - **매일 알림**: 설정의 **알림과 개인정보** 묶음 또는 Android 알림 설정에서 끌 수 있습니다.
 
 ### 7. 아동
@@ -106,7 +98,7 @@ BLOCKBOUND는 13세 이상을 대상으로 합니다. 13세 미만 아동을 대
 
 ### 9. 권리 행사
 
-정보의 열람·정정·삭제·처리 정지 요청이나 개인정보 관련 문의는 assembledbyj@gmail.com으로 보내 주세요. 별도 개발자 서버에 계정 정보나 원본 게임 저장 파일을 보관하지 않습니다. 외부 서비스가 처리한 광고·분석·진단 데이터에 대한 요청을 받으면 필요한 최소 정보만 확인한 뒤 서비스 제공자를 통해 처리할 수 있는 범위와 결과를 알려 드립니다. 앱에 계정이 없어 해당 데이터를 식별하는 데 한계가 있을 수 있습니다. 광고·Google 계정과 관련된 선택은 [Google 내 계정](https://myaccount.google.com/)에서도 할 수 있습니다. 앱 삭제나 이용 분석 끄기만으로 이미 전송된 데이터가 모두 지워지지는 않습니다.
+정보의 열람·정정·삭제·처리 정지 요청이나 개인정보 관련 문의는 assembledbyj@gmail.com으로 보내 주세요. 별도 개발자 서버에 계정 정보나 원본 게임 저장 파일을 보관하지 않습니다. 외부 서비스가 처리한 광고·분석·진단 데이터에 대한 요청을 받으면 필요한 최소 정보만 확인한 뒤 서비스 제공자를 통해 처리할 수 있는 범위와 결과를 알려 드립니다. 앱에 계정이 없어 해당 데이터를 식별하는 데 한계가 있을 수 있습니다. 광고·Google 계정과 관련된 선택은 [Google 내 계정](https://myaccount.google.com/)에서도 할 수 있습니다. 앱 삭제만으로 이미 전송된 데이터가 모두 지워지지는 않습니다.
 
 ### 10. 방침 변경
 
@@ -122,6 +114,7 @@ BLOCKBOUND는 13세 이상을 대상으로 합니다. 13세 미만 아동을 대
 - **2026-10-09**: 현재 버전에 맞춤 — 인앱 구매 없음(광고 제거 구매 문단 삭제), 선택형 매일 알림·결과 공유·평가 요청 추가, Daily 기록을 기기의 "오늘의 최고" 기록으로 정정, 근거 없는 고정 보존 기간 삭제, 처리 위탁·국외 이전 표 추가, "계속 사용하면 동의" 문구 삭제
 - **2026-10-13**: 설치 경과일·세션 번호와 요청별 광고 측정, 동의 전 소급 전송 없음·철회 시 대기 이벤트 폐기, 현재 알림 설정 위치를 명시
 - **2026-10-15**: vc18 코드·SDK 대조 — App Set ID, Remote Config·App Check 처리 정보, Android 13+ 알림 권한 조건, 공유 시 클립보드 복사, 외부 서비스 데이터 삭제 요청 범위를 명확히 설명
+- **2026-10-21**: 버전 24부터 이용 분석(Firebase Analytics)을 모든 사용자에게 끄고 동의 화면과 설정 스위치를 없앰. 기기 설정 목록에 색 구분 기호 추가
 
 ### 11. 문의
 
@@ -131,7 +124,7 @@ BLOCKBOUND는 13세 이상을 대상으로 합니다. 13세 미만 아동을 대
 
 ## Privacy Policy (English)
 
-**Effective date: 2026-10-15**
+**Effective date: 2026-10-21**
 
 ### 1. Introduction
 
@@ -147,9 +140,9 @@ The App has no sign-up, login, online ranking, chat, or cloud save. The current 
 The following stays in the App's private storage on your device and is not sent to developer servers:
 
 - **Game progress**: coins, unlocked cards, purchased/equipped cosmetics (themes, skins, sound and haptic packs), best scores, Run and Classic records and "Today's best" records (last 30 days), mission progress, and a Run in progress
-- **Settings**: language, sound/music/vibration, large text and high contrast, start screen, your analytics choice, and whether the daily reminder is on
+- **Settings**: language, sound/music/vibration, large text, high contrast and color symbols, start screen, and whether the daily reminder is on
 
-Uninstalling the App or clearing its data erases this information; it cannot be restored (the App does not use Android backup). If you allow analytics (3.2), gameplay events may be sent separately.
+Uninstalling the App or clearing its data erases this information; it cannot be restored (the App does not use Android backup).
 
 ### 3. Information Processed by Outside Services
 
@@ -163,19 +156,13 @@ The App is supported by ads: rewarded ads you choose to watch (rerolls, revives,
 
 Where required by law (for example the EEA, the UK, Switzerland and certain US states), a Google UMP privacy message may be shown, and the App does not request ads until those choices allow it. In those regions you can reopen the choices from **Ad privacy choices** in Settings. Google's processing follows the [Google Privacy Policy](https://policies.google.com/privacy) and [How Google uses information from sites or apps that use its services](https://policies.google.com/technologies/partner-sites).
 
-#### 3.2 Analytics — Google Firebase Analytics (optional, off by default)
+#### 3.2 Analytics — not used
 
-Analytics is **off when you first install the App**. It is collected only after you allow it in the initial consent prompt or turn on **Anonymous analytics** in Settings. When on, the following may be processed to improve the game (difficulty and feature tuning, error diagnosis):
-
-- A random app-instance identifier (not your name or email), device/OS/app version, approximate country
-- Gameplay events: mode selection, Stage progress, card choices and effects, tutorial progress, the final results screen, rewarded offer visibility, ad requests, rewards and revenue, setting changes, and use of sharing
-- Locally recorded days since installation and session number, plus random session, Run and ad-request IDs (these contain no name, email or advertising ID)
-
-The App always tells Firebase that ad storage, ad user data and ad personalization are denied. Activity before consent is never sent retroactively. Turning analytics off stops further collection and discards events still waiting in the App's transmission queue.
+From version 24 the App does not collect gameplay information with Google Firebase Analytics. It is off for everyone, and no screen or setting turns it on. If you allowed analytics in an earlier version, that choice is ignored and deleted from your device. For information already sent while an earlier version had analytics allowed, you can request deletion as described in section 9.
 
 #### 3.3 Crash Reports, Remote Settings and Security — Firebase Crashlytics, Remote Config, App Check
 
-These run independently of the analytics switch.
+These run independently of analytics.
 
 - **Crashlytics** processes crash information (error location, device/OS/app version, app state) and an installation identifier when the App crashes or hits an error, to improve stability. Related Firebase SDKs may also process app-session information, such as launch/transition times, and app/device information for diagnostics.
 - **Remote Config** fetches operational settings such as feature switches. It may process an installation identifier and information such as country, language, time zone, OS, SDK and app version.
@@ -199,7 +186,6 @@ After some play, Google Play's in-app review prompt may appear. Ratings and revi
 
 - To serve and measure ads and prevent fraud
 - To improve stability (crashes and errors) and apply operational settings
-- If you turn analytics on, to improve game difficulty and features
 - To show the daily reminder you turned on
 
 ### 5. Service Providers and International Transfers
@@ -209,16 +195,15 @@ The developer does not sell information. To provide the features above, informat
 | Recipient | Country | Information | Purpose | When / how | Retention |
 |---|---|---|---|---|---|
 | Google LLC (AdMob, UMP) | United States and other Google data centers | Advertising and App Set identifiers, device information, approximate location, ad interactions, diagnostics (3.1) | Ads, measurement, fraud prevention | Encrypted network transfer while you use the App | Per Google's policies |
-| Google LLC (Firebase) | United States and other Google data centers | App-instance and installation identifiers, device/region/settings information, usage events (if allowed), crash information, integrity tokens and attestation information (3.2, 3.3) | Analytics, stability, operations, security | Encrypted network transfer while you use the App | Per Firebase policies and project settings |
+| Google LLC (Firebase) | United States and other Google data centers | Installation identifiers, device/region/settings information, crash information, integrity tokens and attestation information (3.3) | Stability, operations, security | Encrypted network transfer while you use the App | Per Firebase policies and project settings |
 | Google LLC (Google Play) | United States and others | Information needed for the review prompt and integrity checks | Ratings, integrity checks | While you use the App | Per Google's policies |
 
-Google privacy contact: [Google privacy form](https://support.google.com/policies/contact/general_privacy_form). You can turn analytics off in Settings and limit ad processing with the choices in section 6. If you refuse all ad processing, some ad-based benefits in the App may not be available. Information may be disclosed when required by law.
+Google privacy contact: [Google privacy form](https://support.google.com/policies/contact/general_privacy_form). You can limit ad processing with the choices in section 6. If you refuse all ad processing, some ad-based benefits in the App may not be available. Information may be disclosed when required by law.
 
 ### 6. Your Choices
 
 - **Advertising ID**: reset or delete it in Android Settings under Privacy › Ads (the path varies by device and version).
 - **Ad privacy choices**: where applicable, through the UMP message and **Ad privacy choices** in Settings.
-- **Analytics**: turn **Anonymous analytics** on or off in Settings (off by default).
 - **Daily reminder**: turn it off under **Notifications & privacy** in Settings or in Android's notification settings.
 
 ### 7. Children
@@ -233,7 +218,7 @@ BLOCKBOUND is intended for users aged 13 and older. It is not directed to childr
 
 ### 9. Your Rights
 
-To request access, correction, deletion, or restriction of processing, or for any privacy question, email assembledbyj@gmail.com. We do not keep account information or original game-save files on a separate developer server. For ad, analytics or diagnostic data processed by outside services, we will confirm only the minimum needed and explain what can be handled through the service providers and the result. Since the App has no account, identifying the relevant data may be limited. Google-account and ad choices are also available at [Google Account](https://myaccount.google.com/). Uninstalling the App or turning analytics off does not by itself erase data already transmitted.
+To request access, correction, deletion, or restriction of processing, or for any privacy question, email assembledbyj@gmail.com. We do not keep account information or original game-save files on a separate developer server. For ad, analytics or diagnostic data processed by outside services, we will confirm only the minimum needed and explain what can be handled through the service providers and the result. Since the App has no account, identifying the relevant data may be limited. Google-account and ad choices are also available at [Google Account](https://myaccount.google.com/). Uninstalling the App does not by itself erase data already transmitted.
 
 ### 10. Changes to This Policy
 
@@ -249,6 +234,7 @@ Revision history:
 - **2026-10-09**: Matched the current version — no in-app purchases (remove-ads section removed); added the optional daily reminder, result sharing and the rating prompt; corrected Daily records to the on-device "Today's best"; removed an unsupported fixed retention period; added the service-provider and international-transfer table; removed "continued use means acceptance"
 - **2026-10-13**: Clarified install age, session number and per-request ad measurement, no pre-consent replay, discarded queued events on withdrawal, and the current reminder setting location
 - **2026-10-15**: Checked against vc18 code and SDK disclosures; clarified App Set ID, Remote Config/App Check information, Android 13+ notification permission, clipboard copying when sharing, and the scope of deletion requests for outside-service data
+- **2026-10-21**: From version 24, analytics (Firebase Analytics) is off for everyone and the consent prompt and Settings switch are removed; added color symbols to the on-device settings list
 
 ### 11. Contact
 
