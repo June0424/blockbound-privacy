@@ -4,7 +4,7 @@
 
 ## 개인정보처리방침 (한국어)
 
-**발효일: 2026-10-21**
+**발효일: 2026-11-25**
 
 ### 1. 소개
 
@@ -13,7 +13,7 @@ BLOCKBOUND(이하 "앱", 패키지 `com.blockbound.game`)는 무료로 내려받
 - 개발자·개인정보 보호 책임자: BLOCKBOUND 개발자
 - 연락처: assembledbyj@gmail.com
 
-앱에는 회원가입·로그인·온라인 순위·채팅·클라우드 저장이 없습니다. 버전 26부터 선택형 인앱 상품 '강제 광고 제거' 하나를 판매합니다(3.7).
+앱에는 회원가입·로그인·온라인 순위·채팅·클라우드 저장이 없습니다. 버전 26부터 선택형 인앱 상품 '광고 제거'(Google Play 상품명 '강제 광고 제거') 하나를 판매합니다(3.7).
 
 ### 2. 기기에만 저장되는 정보
 
@@ -21,15 +21,16 @@ BLOCKBOUND(이하 "앱", 패키지 `com.blockbound.game`)는 무료로 내려받
 
 - **게임 진행**: 코인, 해금한 카드, 구입·장착한 외형(테마·스킨·사운드·진동), 최고 점수, Run·Classic 기록과 "오늘의 최고" 기록(최근 30일), 미션 진행, 이어서 할 Run
 - **설정**: 언어, 소리·음악·진동, 큰 글자·고대비·색 구분 기호, 시작 화면, 매일 알림 사용 여부
-- **구매 상태**: 강제 광고 제거를 구매했는지 여부(Google Play가 확인한 결과)
+- **구매 상태**: 광고 제거를 구매했는지 여부(Google Play가 확인한 결과)
+- **공유 그림**: 결과를 그림으로 공유할 때 만든 PNG 파일(앱 캐시 폴더, 최근 3개까지 보관, 3.5)
 
-앱을 삭제하거나 앱 데이터를 지우면 이 정보는 사라지며 복구할 수 없습니다(앱 백업 기능을 쓰지 않습니다).
+앱을 삭제하거나 앱 데이터를 지우면 기기에 저장된 정보는 사라집니다. 게임 진행과 설정은 복구할 수 없습니다(앱 백업 기능을 쓰지 않습니다). 다만 Google Play에서 구매한 광고 제거는 같은 Google 계정으로 앱을 다시 설치한 뒤 설정의 **구매 복원**에서 되찾을 수 있습니다(3.7).
 
 ### 3. 외부 서비스가 처리하는 정보
 
 #### 3.1 광고 — Google AdMob, Google UMP
 
-앱은 광고로 운영됩니다. 사용자가 선택할 때만 보는 보상형 광고(리롤·부활·Run 종료 보너스)와, 게임을 마친 뒤 제한된 횟수로 나오는 전면 광고가 있습니다. 광고 제공·측정·부정 사용 방지를 위해 Google이 다음 정보를 처리할 수 있습니다.
+앱은 광고로 운영됩니다. 사용자가 선택할 때만 보는 보상형 광고(리롤·부활·Run 종료 보너스)와, 게임을 마친 뒤 제한된 횟수로 나오는 전면 광고가 있습니다. 광고 제거를 구매하면 두 광고 모두 보이지 않습니다(3.7). 광고 제공·측정·부정 사용 방지를 위해 Google이 다음 정보를 처리할 수 있습니다.
 
 - 광고 ID(Android 광고 ID)·앱 집합 ID(App Set ID) 같은 식별자와 앱·기기 정보(기기 모델, OS·앱 버전, 언어)
 - IP 주소에서 추정한 대략적인 위치(국가·도시 수준)
@@ -59,15 +60,15 @@ Firebase의 처리 내용은 [Firebase 개인정보 및 보안](https://firebase
 
 #### 3.5 결과 공유
 
-결과 화면에서 공유를 누르면 점수·Stage 같은 결과 문구와 Google Play 설치 링크를 기기의 클립보드에 복사하고 Android 공유 창으로 전달합니다. 공유 창을 열지 못해도 복사한 문구는 직접 붙여 넣을 수 있습니다. 링크에는 공유 화면을 구분하는 공통 UTM 이름이 포함되며 개인별 추적 ID는 붙이지 않습니다. 어느 앱으로 보낼지는 사용자가 고르며, 앱이 직접 다른 곳으로 전송하지 않습니다.
+결과 화면에서 공유를 누르면 앱이 결과 그림을 만들어 점수·Stage 같은 결과 문구, Google Play 설치 링크와 함께 Android 공유 창으로 전달합니다. 그림에는 결과 화면의 빌드(이름·카드·카드 효과)와 최고 버스트, 게임 이름과 도달한 Stage를 적은 띠가 들어가며 보드는 들어가지 않습니다. 그림은 기기의 앱 캐시 폴더에 PNG 파일로 저장되고 최근 3개까지만 남으며, 앱 데이터를 지우면 함께 사라집니다. 사용자가 고른 앱에는 그 그림을 읽을 수 있는 임시 권한만 주어집니다. 결과 문구와 링크는 클립보드에도 복사되므로 공유 창을 열지 못해도 직접 붙여 넣을 수 있고, 그림을 만들지 못하면 문구만 공유합니다. 링크에는 공유 화면을 구분하는 공통 UTM 이름이 포함되며 개인별 추적 ID는 붙이지 않습니다. 어느 앱으로 보낼지는 사용자가 고르며, 앱이 직접 다른 곳으로 전송하지 않습니다.
 
 #### 3.6 평가 요청
 
 일정 기간 이상 플레이한 뒤 Google Play의 인앱 평가 창이 표시될 수 있습니다. 평가와 리뷰는 Google Play가 처리하며 앱은 그 내용을 받지 않습니다.
 
-#### 3.7 강제 광고 제거 구매 (선택)
+#### 3.7 광고 제거 구매 (선택)
 
-설정에서 **강제 광고 제거**를 한 번 구매하면 게임을 마친 뒤 나오는 전면 광고가 더 이상 나오지 않습니다. 직접 골라서 보는 보상형 광고는 계속 이용할 수 있습니다. 결제는 Google Play 결제 시스템이 처리하며, 개발자는 카드 번호 같은 결제 정보를 받지 않습니다. 앱은 Google Play가 기기에 전달한 구매 정보(상품 ID·구매 확인 정보)로 구매 여부를 기기 안에서 확인하고, 그 결과만 기기에 저장합니다. 이 구매 정보를 개발자 서버나 다른 회사로 보내지 않습니다. 기기를 바꾸거나 앱을 다시 설치하면 설정의 **구매 복원**으로 되찾을 수 있습니다. 결제·환불은 Google Play 정책을 따릅니다.
+설정에서 **광고 제거**(Google Play 상품명 '강제 광고 제거')를 한 번 구매하면 게임을 마친 뒤 나오는 전면 광고가 더 이상 나오지 않습니다. 1.0.1 버전부터는 리롤·부활·Run 종료 보너스도 광고를 보지 않고 바로 받습니다. 받을 수 있는 횟수 제한은 구매 전과 같습니다. 결제는 Google Play 결제 시스템이 처리하며, 개발자는 카드 번호 같은 결제 정보를 받지 않습니다. 앱은 Google Play가 기기에 전달한 구매 정보(상품 ID·구매 확인 정보)로 구매 여부를 기기 안에서 확인하고, 그 결과만 기기에 저장합니다. 이 구매 정보를 개발자 서버나 다른 회사로 보내지 않습니다. 기기를 바꾸거나 앱을 다시 설치하면 설정의 **구매 복원**으로 되찾을 수 있습니다. 결제·환불은 Google Play 정책을 따릅니다.
 
 ### 4. 이용 목적
 
@@ -123,6 +124,7 @@ BLOCKBOUND는 13세 이상을 대상으로 합니다. 13세 미만 아동을 대
 - **2026-10-13**: 설치 경과일·세션 번호와 요청별 광고 측정, 동의 전 소급 전송 없음·철회 시 대기 이벤트 폐기, 현재 알림 설정 위치를 명시
 - **2026-10-15**: vc18 코드·SDK 대조 — App Set ID, Remote Config·App Check 처리 정보, Android 13+ 알림 권한 조건, 공유 시 클립보드 복사, 외부 서비스 데이터 삭제 요청 범위를 명확히 설명
 - **2026-10-21**: 버전 24부터 이용 분석(Firebase Analytics)을 모든 사용자에게 끄고 동의 화면과 설정 스위치를 없앰. 기기 설정 목록에 색 구분 기호 추가. 버전 25부터는 나이를 수집하지 않고 모든 광고 요청에 동의 연령 미만 처리를 적용해 개인화 광고·리마케팅 요청을 제한. 버전 26부터 선택형 강제 광고 제거 구매(Google Play 결제)와 기기 저장 구매 상태를 추가
+- **2026-11-25**: 1.0.1 버전에 맞춤 — 결과를 그림으로 공유(기기 캐시에 최근 3개만 보관, 고른 앱에는 그 그림만 읽을 권한), 광고 제거 구매자는 리롤·부활·Run 종료 보너스를 광고 없이 받음, 상품 이름을 앱 화면과 같은 '광고 제거'로 표기
 
 ### 11. 문의
 
@@ -132,7 +134,7 @@ BLOCKBOUND는 13세 이상을 대상으로 합니다. 13세 미만 아동을 대
 
 ## Privacy Policy (English)
 
-**Effective date: 2026-10-21**
+**Effective date: 2026-11-25**
 
 ### 1. Introduction
 
@@ -141,7 +143,7 @@ BLOCKBOUND (the "App", package `com.blockbound.game`) is a free Android game. Th
 - Developer and privacy contact: the BLOCKBOUND developer
 - Contact: assembledbyj@gmail.com
 
-The App has no sign-up, login, online ranking, chat, or cloud save. From version 26 it sells one optional in-app product, "Remove forced ads" (3.7).
+The App has no sign-up, login, online ranking, chat, or cloud save. From version 26 it sells one optional in-app product, "Remove ads" (Google Play product name "Remove forced ads") (3.7).
 
 ### 2. Information Stored Only on Your Device
 
@@ -149,15 +151,16 @@ The following stays in the App's private storage on your device and is not sent 
 
 - **Game progress**: coins, unlocked cards, purchased/equipped cosmetics (themes, skins, sound and haptic packs), best scores, Run and Classic records and "Today's best" records (last 30 days), mission progress, and a Run in progress
 - **Settings**: language, sound/music/vibration, large text, high contrast and color symbols, start screen, and whether the daily reminder is on
-- **Purchase status**: whether you bought "Remove forced ads" (as confirmed by Google Play)
+- **Purchase status**: whether you bought "Remove ads" (as confirmed by Google Play)
+- **Shared pictures**: the PNG files made when you share a result as a picture (App cache folder, the newest 3 kept; 3.5)
 
-Uninstalling the App or clearing its data erases this information; it cannot be restored (the App does not use Android backup).
+Uninstalling the App or clearing its data erases the information stored on your device. Game progress and settings cannot be restored (the App does not use Android backup). However, your Google Play purchase of **Remove ads** can be restored from **Restore purchase** in Settings after reinstalling with the same Google account (3.7).
 
 ### 3. Information Processed by Outside Services
 
 #### 3.1 Ads — Google AdMob and Google UMP
 
-The App is supported by ads: rewarded ads you choose to watch (rerolls, revives, the run-end bonus) and a limited number of full-screen ads after a finished game. To serve and measure ads and prevent fraud, Google may process:
+The App is supported by ads: rewarded ads you choose to watch (rerolls, revives, the run-end bonus) and a limited number of full-screen ads after a finished game. If you buy Remove ads, neither kind of ad is shown (3.7). To serve and measure ads and prevent fraud, Google may process:
 
 - Identifiers such as the Android Advertising ID and App Set ID, and app/device information (model, OS and app version, language)
 - Approximate location inferred from your IP address (country/city level)
@@ -187,15 +190,15 @@ The daily reminder is used only if you turn it on from the results screen or Set
 
 #### 3.5 Sharing Results
 
-When you tap Share on a results screen, a result line (such as score and Stage) and a Google Play install link are copied to your device's clipboard and passed to Android's share sheet. You can paste the copied text yourself even if the share sheet cannot open. The link includes a common UTM name identifying the sharing screen, without a personal tracking ID. You choose where it goes; the App does not send it anywhere itself.
+When you tap Share on a results screen, the App makes a result picture and passes it to Android's share sheet together with a result line (such as score and Stage) and a Google Play install link. The picture shows the build from the results screen (name, cards and card effects), the best Burst, and a band with the game name and the Stage reached; the board is not included. It is saved as a PNG file in the App's cache folder on your device; only the newest 3 are kept, and clearing the App's data removes them. The app you choose gets temporary permission to read that picture only. The result line and link are also copied to your clipboard, so you can paste them yourself if the share sheet cannot open, and if the picture cannot be made, only the text is shared. The link includes a common UTM name identifying the sharing screen, without a personal tracking ID. You choose where it goes; the App does not send it anywhere itself.
 
 #### 3.6 Rating Prompt
 
 After some play, Google Play's in-app review prompt may appear. Ratings and reviews are handled by Google Play; the App does not receive their content.
 
-#### 3.7 Remove Forced Ads Purchase (optional)
+#### 3.7 Remove Ads Purchase (optional)
 
-A one-time purchase of **Remove forced ads** in Settings stops the full-screen ads shown after a finished game. Rewarded ads you choose to watch stay available. Payment is handled by Google Play's billing system; the developer never receives card numbers or other payment details. The App checks on your device the purchase information Google Play passes to it (product ID and purchase confirmation) and stores only the result on the device. It does not send this purchase information to developer servers or other companies. After changing devices or reinstalling, use **Restore purchases** in Settings. Payments and refunds follow Google Play's policies.
+A one-time purchase of **Remove ads** in Settings (Google Play product name "Remove forced ads") stops the full-screen ads shown after a finished game. From version 1.0.1, rerolls, revives and the run-end bonus are also granted right away without watching an ad; the same limits on how often you can get them still apply. Payment is handled by Google Play's billing system; the developer never receives card numbers or other payment details. The App checks on your device the purchase information Google Play passes to it (product ID and purchase confirmation) and stores only the result on the device. It does not send this purchase information to developer servers or other companies. After changing devices or reinstalling, use **Restore purchase** in Settings. Payments and refunds follow Google Play's policies.
 
 ### 4. How Information Is Used
 
@@ -251,6 +254,7 @@ Revision history:
 - **2026-10-13**: Clarified install age, session number and per-request ad measurement, no pre-consent replay, discarded queued events on withdrawal, and the current reminder setting location
 - **2026-10-15**: Checked against vc18 code and SDK disclosures; clarified App Set ID, Remote Config/App Check information, Android 13+ notification permission, clipboard copying when sharing, and the scope of deletion requests for outside-service data
 - **2026-10-21**: From version 24, analytics (Firebase Analytics) is off for everyone and the consent prompt and Settings switch are removed; added color symbols to the on-device settings list. From version 25, all ad requests use under-age-of-consent treatment without collecting age, restricting personalized advertising and remarketing requests. From version 26, added the optional "Remove forced ads" purchase (Google Play billing) and its on-device purchase status
+- **2026-11-25**: Matched version 1.0.1 — sharing a result as a picture (the newest 3 kept in the device cache; the chosen app may read only that picture); Remove ads buyers get rerolls, revives and the run-end bonus without ads; the product is named "Remove ads" as in the App
 
 ### 11. Contact
 
